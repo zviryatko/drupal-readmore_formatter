@@ -1,0 +1,5 @@
+name: Read More field formatter
+type: module
+description: Field formatter to expand and collapse text of a field.
+core: 8.x
+package: Field Formatters
