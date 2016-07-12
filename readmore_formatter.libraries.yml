@@ -12,7 +12,6 @@ readmore.js:
     remote: https://github.com/jedfoster/Readmore.js/blob/v2.2.0/LICENSE
     gpl-compatible: true
   js:
-    https://cdnjs.cloudflare.com/ajax/libs/Readmore.js/2.2.0/readmore.js: { type: external, minified: false }
-#    https://cdnjs.cloudflare.com/ajax/libs/Readmore.js/2.2.0/readmore.min.js: { type: external, minified: true }
+    https://cdnjs.cloudflare.com/ajax/libs/Readmore.js/2.2.0/readmore.min.js: { type: external, minified: true }
   dependencies:
     - core/jquery
