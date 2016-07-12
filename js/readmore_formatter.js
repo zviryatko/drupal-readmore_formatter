@@ -17,7 +17,14 @@
       for (var id in settings.readmoreSettings) {
         if (settings.readmoreSettings.hasOwnProperty(id)) {
           var $element = $('.' + id, context);
-          $element.readmore(settings.readmoreSettings[id]);
+          $element.readmore($.extend(settings.readmoreSettings[id], {
+            beforeToggle: function(trigger, $element, expanded) {
+              $element.trigger('readmore.beforeToggle', [trigger, expanded])
+            },
+            afterToggle: function(trigger, $element, expanded) {
+              $element.trigger('readmore.afterToggle', [trigger, expanded])
+            }
+          }));
         }
       }
     }
